@@ -1,0 +1,313 @@
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef6f1;
+  color: #374151;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+/* ==========================================
+   REGISTRATION PAGE
+========================================== */
+
+.page-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px 20px 80px;
+}
+
+.hero-card {
+  background: #e7f5ea;
+  border-radius: 24px;
+  padding: 35px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.logo {
+  width: 130px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.retreat-text {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.call-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1f5d33;
+  margin-bottom: 12px;
+}
+
+.scripture {
+  font-style: italic;
+  color: #6b7280;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.green-line {
+  width: 80px;
+  height: 4px;
+  background: #3cb371;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.description {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.form-card {
+  background: white;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.form-card h2 {
+  color: #1f5d33;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: white;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1f5d33;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    #1f1f1f,
+    #000000
+  );
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* ==========================================
+   CONFIRMATION PAGE
+========================================== */
+
+.confirmation-page {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px 60px;
+  background: white;
+  min-height: 100vh;
+}
+
+.success-title {
+  text-align: center;
+  color: #1f6b2f;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.celebrate {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.received {
+  text-align: center;
+  color: #555;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.detail {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.detail strong {
+  color: #333;
+  font-weight: 700;
+}
+
+.qr-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.download-btn {
+  width: 100%;
+  background: #1da1e2;
+  color: white;
+  padding: 22px;
+  border-radius: 24px;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.download-btn:hover {
+  background: #1688c2;
+}
+
+.home-btn {
+  width: 100%;
+  background: #e5e7eb;
+  color: #111827;
+  padding: 22px;
+  border-radius: 24px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.home-btn:hover {
+  background: #d1d5db;
+}
+
+/* ==========================================
+   PRINT TICKET
+========================================== */
+
+@media print {
+  .download-btn,
+  .home-btn {
+    display: none;
+  }
+
+  body {
+    background: white;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+  .call-title {
+    font-size: 2rem;
+  }
+
+  .form-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .success-title {
+    font-size: 3rem;
+  }
+
+  .received {
+    font-size: 1.5rem;
+  }
+
+  .detail {
+    font-size: 1.3rem;
+  }
+
+  .download-btn,
+  .home-btn {
+    font-size: 1.3rem;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container,
+  .confirmation-page {
+    padding: 20px 15px 50px;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  .call-title {
+    font-size: 1.8rem;
+  }
+
+  .success-title {
+    font-size: 2.5rem;
+  }
+
+  .celebrate {
+    font-size: 3rem;
+  }
+
+  .received {
+    font-size: 1.2rem;
+  }
+
+  .detail {
+    font-size: 1.1rem;
+  }
+
+  .download-btn,
+  .home-btn {
+    font-size: 1.1rem;
+    border-radius: 20px;
+  }
+}
