@@ -323,3 +323,141 @@ textarea {
 #ticket {
   background: #fff;
 }
+/* Page Background */
+
+.confirmation-container {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ticket Card */
+
+.confirmation-card {
+  width: 100%;
+  max-width: 650px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-top: 6px solid #2563eb;
+}
+
+/* Title */
+
+.success-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+
+.success-text {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* Details Section */
+
+.details {
+  width: 100%;
+}
+
+.details p {
+  margin: 12px 0;
+  font-size: 1rem;
+  color: #1f2937;
+  line-height: 1.6;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 8px;
+}
+
+.details strong {
+  color: #111827;
+  display: inline-block;
+  min-width: 160px;
+}
+
+/* Registration Code Highlight */
+
+.details p:last-child {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+/* QR Code */
+
+.qr-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.qr-wrapper svg {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Download Button Area */
+
+.download-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* Download Button */
+
+.download-btn {
+  background: linear-gradient(
+    135deg,
+    #38bdf8,
+    #2563eb
+  );
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 220px;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .confirmation-card {
+    padding: 20px;
+  }
+
+  .success-title {
+    font-size: 1.6rem;
+  }
+
+  .details strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .download-btn {
+    width: 100%;
+  }
+}
