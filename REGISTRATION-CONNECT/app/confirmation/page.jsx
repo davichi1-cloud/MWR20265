@@ -86,37 +86,21 @@ function ConfirmationContent() {
         </p>
 
         <div className="details">
-          <p>
-            <strong>Name:</strong> {name}
-          </p>
+          <p><strong>Name:</strong> {name}</p>
 
-          <p>
-            <strong>Email:</strong> {email}
-          </p>
+          <p><strong>Email:</strong> {email}</p>
 
-          <p>
-            <strong>Gender:</strong> {gender}
-          </p>
+          <p><strong>Gender:</strong> {gender}</p>
 
-          <p>
-            <strong>Denomination:</strong> {denomination}
-          </p>
+          <p><strong>Denomination:</strong> {denomination}</p>
 
-          <p>
-            <strong>Health:</strong> {health || "None"}
-          </p>
+          <p><strong>Health:</strong> {health || "None"}</p>
 
-          <p>
-            <strong>Expectation:</strong> {expectation}
-          </p>
+          <p><strong>Expectation:</strong> {expectation}</p>
 
-          <p>
-            <strong>Tribe:</strong> {tribe}
-          </p>
+          <p><strong>Tribe:</strong> {tribe}</p>
 
-          <p>
-            <strong>Registration Code:</strong> {code}
-          </p>
+          <p><strong>Registration Code:</strong> {code}</p>
         </div>
 
         <div className="qr-wrapper">
@@ -124,6 +108,10 @@ function ConfirmationContent() {
             value={JSON.stringify({
               name,
               email,
+              gender,
+              denomination,
+              health,
+              expectation,
               tribe,
               code,
             })}
@@ -132,12 +120,14 @@ function ConfirmationContent() {
         </div>
       </div>
 
-      <button
-        className="download-btn"
-        onClick={downloadPNG}
-      >
-        Download PNG Ticket
-      </button>
+      <div className="download-wrapper">
+        <button
+          className="download-btn"
+          onClick={downloadPNG}
+        >
+          Download Ticket
+        </button>
+      </div>
     </div>
   );
 }
@@ -148,4 +138,4 @@ export default function ConfirmationPage() {
       <ConfirmationContent />
     </Suspense>
   );
-}
+               }
