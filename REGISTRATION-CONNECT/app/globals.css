@@ -311,3 +311,15 @@ textarea {
     border-radius: 20px;
   }
 }
+.download-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#ticket {
+  background: #fff;
+}
