@@ -1,242 +1,138 @@
-.confirmation-container{
+/* Page Background */
 
-min-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-padding:30px 20px;
-
-background:
-
-linear-gradient(
-135deg,
-#eef6ff,
-#f7fafc
-);
-
+.confirmation-container {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.confirmation-card{
+/* Ticket Card */
 
-width:100%;
-
-max-width:500px;
-
-background:#ffffff;
-
-border-radius:24px;
-
-padding:35px;
-
-box-shadow:
-
-0 10px 35px rgba(
-0,
-0,
-0,
-0.08
-);
-
-text-align:center;
-
-overflow:hidden;
-
-animation:fadeIn .5s ease;
-
+.confirmation-card {
+  width: 100%;
+  max-width: 650px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-top: 6px solid #2563eb;
 }
 
-.success-title{
+/* Title */
 
-font-size:2rem;
-
-font-weight:700;
-
-color:#16a34a;
-
-margin-bottom:10px;
-
+.success-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 10px;
 }
 
-.success-text{
+/* Subtitle */
 
-font-size:15px;
-
-color:#666;
-
-margin-bottom:30px;
-
+.success-text {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 30px;
 }
 
-.details{
+/* Details Section */
 
-background:#f8fafc;
-
-border-radius:16px;
-
-padding:20px;
-
-text-align:left;
-
-margin-bottom:25px;
-
+.details {
+  width: 100%;
 }
 
-.details p{
-
-margin:12px 0;
-
-font-size:15px;
-
-line-height:1.6;
-
-color:#333;
-
-word-break:break-word;
-
+.details p {
+  margin: 12px 0;
+  font-size: 1rem;
+  color: #1f2937;
+  line-height: 1.6;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 8px;
 }
 
-.details strong{
-
-color:#111;
-
+.details strong {
+  color: #111827;
+  display: inline-block;
+  min-width: 160px;
 }
 
-.qr-wrapper{
+/* Registration Code Highlight */
 
-display:flex;
-
-justify-content:center;
-
-margin:25px 0;
-
-padding:20px;
-
-background:#ffffff;
-
-border-radius:20px;
-
-border:
-
-1px solid #ececec;
-
+.details p:last-child {
+  font-weight: bold;
+  color: #2563eb;
 }
 
-.qr-wrapper svg{
+/* QR Code */
 
-max-width:220px;
-
-width:100%;
-
-height:auto;
-
+.qr-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
 }
 
-.download-btn{
-
-width:100%;
-
-padding:15px;
-
-border:none;
-
-border-radius:14px;
-
-background:#2563eb;
-
-color:white;
-
-font-size:16px;
-
-font-weight:600;
-
-cursor:pointer;
-
-transition:.3s;
-
+.qr-wrapper svg {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.download-btn:hover{
+/* Download Button Area */
 
-transform:translateY(-2px);
-
-opacity:.95;
-
+.download-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
 }
 
-.download-btn:active{
+/* Download Button */
 
-transform:scale(.98);
-
+.download-btn {
+  background: linear-gradient(
+    135deg,
+    #38bdf8,
+    #2563eb
+  );
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 220px;
+  transition: all 0.3s ease;
 }
 
-@keyframes fadeIn{
-
-from{
-
-opacity:0;
-
-transform:
-
-translateY(20px);
-
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
 }
 
-to{
+/* Mobile Responsive */
 
-opacity:1;
+@media (max-width: 768px) {
+  .confirmation-card {
+    padding: 20px;
+  }
 
-transform:
+  .success-title {
+    font-size: 1.6rem;
+  }
 
-translateY(0);
+  .details strong {
+    display: block;
+    margin-bottom: 4px;
+  }
 
-}
-
-}
-
-@media screen and (max-width:600px){
-
-.confirmation-card{
-
-padding:25px;
-
-border-radius:18px;
-
-}
-
-.success-title{
-
-font-size:1.6rem;
-
-}
-
-.details{
-
-padding:16px;
-
-}
-
-.details p{
-
-font-size:14px;
-
-}
-
-.qr-wrapper svg{
-
-max-width:180px;
-
-}
-
-.download-btn{
-
-padding:13px;
-
-font-size:15px;
-
-}
-
+  .download-btn {
+    width: 100%;
+  }
 }
