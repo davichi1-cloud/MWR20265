@@ -1,46 +1,44 @@
-/* Page Background */
+/* Page Container */
 
 .confirmation-container {
   min-height: 100vh;
-  background: #f5f7fb;
-  padding: 40px 20px;
+  background: #f4f7fb;
+  padding: 30px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Ticket Card */
+/* Ticket */
 
 .confirmation-card {
   width: 100%;
   max-width: 650px;
   background: #ffffff;
-  border-radius: 20px;
-  padding: 35px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-top: 6px solid #2563eb;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Title */
+/* Heading */
 
 .success-title {
   text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
   color: #16a34a;
+  font-size: 2rem;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* Subtitle */
+/* Sub Heading */
 
 .success-text {
   text-align: center;
-  color: #6b7280;
-  font-size: 1rem;
-  margin-bottom: 30px;
+  color: #555;
+  margin-bottom: 25px;
 }
 
-/* Details Section */
+/* Details */
 
 .details {
   width: 100%;
@@ -48,20 +46,16 @@
 
 .details p {
   margin: 12px 0;
-  font-size: 1rem;
-  color: #1f2937;
+  font-size: 16px;
+  color: #222;
   line-height: 1.6;
-  border-bottom: 1px solid #f0f0f0;
-  padding-bottom: 8px;
 }
 
 .details strong {
-  color: #111827;
-  display: inline-block;
-  min-width: 160px;
+  color: #000;
 }
 
-/* Registration Code Highlight */
+/* Registration Code */
 
 .details p:last-child {
   font-weight: bold;
@@ -73,50 +67,44 @@
 .qr-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  padding: 20px;
+  margin-top: 25px;
 }
 
 .qr-wrapper svg {
   background: white;
-  padding: 12px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-/* Download Button Area */
-
-.download-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 /* Download Button */
 
+.download-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .download-btn {
   background: linear-gradient(
-    135deg,
+    90deg,
     #38bdf8,
     #2563eb
   );
   color: white;
   border: none;
+  padding: 14px 30px;
   border-radius: 10px;
-  padding: 14px 28px;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-  cursor: pointer;
   min-width: 220px;
-  transition: all 0.3s ease;
 }
 
 .download-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+  opacity: 0.9;
 }
 
-/* Mobile Responsive */
+/* Mobile */
 
 @media (max-width: 768px) {
   .confirmation-card {
@@ -124,12 +112,7 @@
   }
 
   .success-title {
-    font-size: 1.6rem;
-  }
-
-  .details strong {
-    display: block;
-    margin-bottom: 4px;
+    font-size: 1.5rem;
   }
 
   .download-btn {
