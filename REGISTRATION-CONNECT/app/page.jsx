@@ -368,3 +368,18 @@ loading
 );
 
 }
+const registrationClosed = true;
+
+if (registrationClosed) {
+  return (
+    <div className="closed-container">
+      <h1>Registration Closed</h1>
+      <p>
+        Registration for Ministers & Workers Retreat 2026 has officially closed.
+      </p>
+      <p>
+        Thank you for your interest.
+      </p>
+    </div>
+  );
+}
